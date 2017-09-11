@@ -1,0 +1,14 @@
+extends ../template
+
+block variables
+	- var title = 'Портфолио Линкера Алексея'
+
+block content 
+	.wrapper
+
+	form
+		label(for="email") email
+		input(name="email" id="email")
+		label(for="password") password
+		input(name="password" id="password")
+		button Войти   
