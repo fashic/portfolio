@@ -8,7 +8,7 @@ block variables
 				img.section-title__pic
 			.user.blog__user
 				.user__pic
-					img.user__pic-img
+					img.user__pic-img(src="../../images/content/user.jpg")
 				.user__description
 					.user__name Линкер Алексей
 					.user__info Личный сайт разработчика
@@ -28,6 +28,7 @@ block content
 				li.reviews__item
 					.feedback
 						.feedback__img
+							img.feedback__img-pic(src="../../images/content/Dima.jpg")
 						.feedback__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
 						.feedback__people
 							.feedback__people-name Ковальчук Дмитрий
@@ -35,23 +36,24 @@ block content
 				li.reviews__item
 					.feedback
 						.feedback__img
+							img.feedback__img-pic(src="../../images/content/Vova.jpg")
 						.feedback__text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
 						.feedback__people
 							.feedback__people-name Сабанцев Владимир
 							.feedback__people-post Сабанцев Владимир
 
 		.reviews__form
-			form.form__feedback
-				.form__title Связаться со мной
+			form.form.form__fb
+				.form__title.form__title-fb Связаться со мной
 				.form__row
 					input.form__input(type="text" placeholder="Имя")
 				.form__row
 					input.form__input(type="text" placeholder="Email")
 				.form__row
 					textarea.form__area(placeholder="Ваше сообщение")
-				.form__button
-					button(type="submit").form__feedback-btn Отправить
-					button(type="reset").form__feedback-btn Очистить
+				.form__btn
+					button(type="submit").form__btn-left.feedback-btn-left Отправить
+					button(type="reset").form__btn-right.feedback-btn-right Очистить
 
 			
 	include ../common/slider.pug

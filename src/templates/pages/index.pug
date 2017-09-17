@@ -11,12 +11,66 @@ html
 		script(src='/assets/scripts/bundle.js' defer)
 	body
 		.wrapper
-			section.section.wrapper__bg
-				.container
-					.avt__btn
-						button(type="button").button__avt
-					
-					.wrapper__avt
+			
+			section.section.welcome
+				.welcome__bg
+					.welcome__block
+						.avt__btn
+							button(type="button").button__avt Авторизоваться
 						
+						.welcome__form-block
+							.welcome__form
+								.welcome__title
+									.section-title
+										img.section-title__pic
+									.user.welcome__user
+										.user__pic
+											img.user__pic-img(src="../../assets/images/content/user.jpg")
+										.user__description
+											.user__name Линкер Алексей
+											.user__info Личный сайт разработчика
+								.welcome__social
+									include ../common/social
+								.welcome__menu
+									ul.welcome__menu-list
+										li.welcome__menu-item
+											a(href="my-works.html") Мои работы
+										li.welcome__menu-item
+											a(href="about.html") Обо мне
+										li.welcome__menu-item
+											a(href="blog.html") Блог
 
+							//- .avt__block
+							//- 	form.form.form-avt
+							//- 	.form__title.form__avt-title Авторизируйтесь
+							//- 	.form__row.form__avt-row
+							//- 		label.form__label-input
+							//- 			.form__icon
+							//- 			input.form__input(type="text" placeholder="Логин")
+							//- 	.form__row.form__avt-row
+							//- 		label.form__label-input
+							//- 			.form__icon
+							//- 			input.form__input(type="text" placeholder="Пароль")
+							//- 	.form__row.form__avt-row
+							//- 		label.form__checkbox
+							//- 			input.form__checkbox-input(type="checkbox")
+							//- 			.form__checkbox-fake
+							//- 			.form__checkbox-text Я Человек
+							//- 	.form__row.radio
+							//- 		.radio__title Вы точно не робот?
+							//- 		.radio__row
+							//- 			input.radio__btn(type="radio" name="robot" value="yes")
+							//- 			.radio__fake
+							//- 			.radio__text Да
+
+							//- 			input.radio__btn(type="radio" name="robot" value="no")
+							//- 			.radio__fake
+							//- 			.radio__text Не уверен
+							//- 	.form__btn
+							//- 		button(type="button").form__btn-left.welcome__btn-left На главную
+							//- 		button(type="submit").form__btn-right.welcome__btn-right Войти
+								
+							footer.welcome__footer
+							p © Алексей Линкер | создано с любовью в LoftSchool | 2016
+	
 

@@ -2,7 +2,7 @@
 <div class="header__title">
   <div class="section-title"><img class="section-title__pic"/></div>
   <div class="user blog__user">
-    <div class="user__pic"><img class="user__pic-img"/></div>
+    <div class="user__pic"><img class="user__pic-img" src="../../images/content/user.jpg"/></div>
     <div class="user__description">
       <div class="user__name">Линкер Алексей</div>
       <div class="user__info">Личный сайт разработчика</div>
@@ -25,11 +25,14 @@
       <header class="header"> 
         <div class="container">
           <div class="hearer__menu">
-            <ul class="socials">
-              <li class="socials__item"><a class="socials__item_vk socials__link" href=""></a></li>
-              <li class="socials__item"><a class="socials__item_tw socials__link" href=""></a></li>
-              <li class="socials__item"><a class="socials__item_in socials__link" href=""></a></li>
-            </ul>
+            <div class="header__social">
+              <ul class="socials">
+                <li class="socials__item"><a class="socials__item_vk socials__link" href=""></a></li>
+                <li class="socials__item"><a class="socials__item_tw socials__link" href=""></a></li>
+                <li class="socials__item"><a class="socials__item_in socials__link" href=""></a></li>
+              </ul>
+            </div>
+            <div class="hamburger"><img class="hamburger__pic" src="../../images/hamburger.png"></div>
           </div>
         </div>
       </header><div class="box">
@@ -49,7 +52,7 @@
           <ul class="reviews__list">
             <li class="reviews__item">
               <div class="feedback">
-                <div class="feedback__img"></div>
+                <div class="feedback__img"><img class="feedback__img-pic" src="../../images/content/Dima.jpg"></div>
                 <div class="feedback__text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
                 <div class="feedback__people">
                   <div class="feedback__people-name">Ковальчук Дмитрий</div>
@@ -59,7 +62,7 @@
             </li>
             <li class="reviews__item">
               <div class="feedback">
-                <div class="feedback__img"></div>
+                <div class="feedback__img"><img class="feedback__img-pic" src="../../images/content/Vova.jpg"></div>
                 <div class="feedback__text">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
                 <div class="feedback__people">
                   <div class="feedback__people-name">Сабанцев Владимир</div>
@@ -70,8 +73,8 @@
           </ul>
         </div>
         <div class="reviews__form">
-          <form class="form__feedback">
-            <div class="form__title">Связаться со мной</div>
+          <form class="form form__fb">
+            <div class="form__title form__title-fb">Связаться со мной</div>
             <div class="form__row">
               <input class="form__input" type="text" placeholder="Имя">
             </div>
@@ -81,9 +84,9 @@
             <div class="form__row">
               <textarea class="form__area" placeholder="Ваше сообщение"></textarea>
             </div>
-            <div class="form__button">
-              <button class="form__feedback-btn" type="submit">Отправить</button>
-              <button class="form__feedback-btn" type="reset">Очистить</button>
+            <div class="form__btn">
+              <button class="form__btn-left feedback-btn-left" type="submit">Отправить</button>
+              <button class="form__btn-right feedback-btn-right" type="reset">Очистить</button>
             </div>
           </form>
         </div>

@@ -1,11 +1,18 @@
-body{
-    margin: 10px;
-    background-color: #ccc;
-}
+//colors
+$light__green: #6c9c5a;
+$green: #4e8839;
+$light__grey: #566358;
+$grey: #373e42;
+
 
 //setups 
 @import 'setups/fonts';
+@import 'setups/layout';
+@import 'setups/main';
+
 
 @import 'common/menu';
+@import 'common/header';
+@import 'common/index';
 //@import 'common/technologies';
 //@import 'common/slider';
