@@ -3,6 +3,55 @@ extends ../template
 block variables
 	- var title = 'Мои работы'
 
+		.header__title
+			.section-title
+				img.section-title__pic
+			.user.blog__user
+				.user__pic
+					img.user__pic-img
+				.user__description
+					.user__name Линкер Алексей
+					.user__info Личный сайт разработчика
+
+
 block content 
-	h1 Мои работы
+	section.section.my-work
+		.my-work__bg
+		.my-work__title Мои работы
+
+	section.section.slider
+
+	section.section.reviews
+		.reviews__title
+		.reviews__feedback
+			ul.reviews__list
+				li.reviews__item
+					.feedback
+						.feedback__img
+						.feedback__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+						.feedback__people
+							.feedback__people-name Ковальчук Дмитрий
+							.feedback__people-post — основатель Loftschool
+				li.reviews__item
+					.feedback
+						.feedback__img
+						.feedback__text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+						.feedback__people
+							.feedback__people-name Сабанцев Владимир
+							.feedback__people-post Сабанцев Владимир
+
+		.reviews__form
+			form.form__feedback
+				.form__title Связаться со мной
+				.form__row
+					input.form__input(type="text" placeholder="Имя")
+				.form__row
+					input.form__input(type="text" placeholder="Email")
+				.form__row
+					textarea.form__area(placeholder="Ваше сообщение")
+				.form__button
+					button(type="submit").form__feedback-btn Отправить
+					button(type="reset").form__feedback-btn Очистить
+
+			
 	include ../common/slider.pug

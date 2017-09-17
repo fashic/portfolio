@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+
+<div class="header__title">
+  <div class="section-title"><img class="section-title__pic"/></div>
+  <div class="user blog__user">
+    <div class="user__pic"><img class="user__pic-img"/></div>
+    <div class="user__description">
+      <div class="user__name">Линкер Алексей</div>
+      <div class="user__info">Личный сайт разработчика</div>
+    </div>
+  </div>
+</div><!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -11,24 +21,122 @@
     <script src="/assets/scripts/bundle.js" defer></script>
   </head>
   <body>
-    <h1>Мои работы</h1>
-    <div class="container">
-      <ul id="slides">
-        <li class="slide showing"></li>
-        <li class="slide"></li>
-        <li class="slide"></li>
-      </ul>
-      <div class="buttons">
-        <button class="controls" id="previous">&lt;</button>
-        <button class="controls" id="next">&gt;    </button>
+    <div class="wrapper">
+      <header class="header"> 
+        <div class="container">
+          <div class="hearer__menu">
+            <ul class="socials">
+              <li class="socials__item"><a class="socials__item_vk socials__link" href=""></a></li>
+              <li class="socials__item"><a class="socials__item_tw socials__link" href=""></a></li>
+              <li class="socials__item"><a class="socials__item_in socials__link" href=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </header><div class="box">
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle">
+<polygon class = "left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+<polygon class = "right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
+</svg>
+</div>
+      <section class="section my-work">
+        <div class="my-work__bg"></div>
+        <div class="my-work__title">Мои работы</div>
+      </section>
+      <section class="section slider"></section>
+      <section class="section reviews">
+        <div class="reviews__title"></div>
+        <div class="reviews__feedback">
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <div class="feedback">
+                <div class="feedback__img"></div>
+                <div class="feedback__text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
+                <div class="feedback__people">
+                  <div class="feedback__people-name">Ковальчук Дмитрий</div>
+                  <div class="feedback__people-post">— основатель Loftschool</div>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="feedback">
+                <div class="feedback__img"></div>
+                <div class="feedback__text">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
+                <div class="feedback__people">
+                  <div class="feedback__people-name">Сабанцев Владимир</div>
+                  <div class="feedback__people-post">Сабанцев Владимир</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="reviews__form">
+          <form class="form__feedback">
+            <div class="form__title">Связаться со мной</div>
+            <div class="form__row">
+              <input class="form__input" type="text" placeholder="Имя">
+            </div>
+            <div class="form__row">
+              <input class="form__input" type="text" placeholder="Email">
+            </div>
+            <div class="form__row">
+              <textarea class="form__area" placeholder="Ваше сообщение"></textarea>
+            </div>
+            <div class="form__button">
+              <button class="form__feedback-btn" type="submit">Отправить</button>
+              <button class="form__feedback-btn" type="reset">Очистить</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <div class="container">
+        <ul id="slides">
+          <li class="slide showing"></li>
+          <li class="slide"></li>
+          <li class="slide"></li>
+        </ul>
+        <div class="buttons">
+          <button class="controls" id="previous">&lt;</button>
+          <button class="controls" id="next">&gt;    </button>
+        </div>
       </div>
+      <h2>Меню</h2>
+      <ul class="menu">
+        <li><a href="/index.html">Главная</a></li>
+        <li><a href="/about.html">Обо мне</a></li>
+        <li><a href="/my-works.html">Мои работы</a></li>
+        <li><a href="/blog.html">Блог</a></li>
+      </ul>
+      <footer class="footer">
+        <div class="footer__row">
+          <div class="footer__col footer__col-left"></div>
+          <div class="footer__col footer__col-mid">
+            <div class="footer__menu">
+              <nav class="menu">
+                <ul class="menu__list"></ul>
+                <li class="menu__item"><a class="menu__link" href="#"></a></li>
+                <li class="menu__item"><a class="menu__link" href="#"></a></li>
+                <li class="menu__item"><a class="menu__link" href="#"></a></li>
+                <li class="menu__item"><a class="menu__link" href="#"></a></li>
+              </nav>
+            </div>
+            <div class="footer__socials">
+              <ul class="socials socials_footer">
+                <li class="socials__item"><a class="socials__item_vk socials__link" href=""></a></li>
+                <li class="socials__item"><a class="socials__item_tw socials__link" href=""></a></li>
+                <li class="socials__item"><a class="socials__item_in socials__link" href=""></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col footer__col-right">
+            <div class="footer__text text-content">
+              <p>Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете. — Martin Golding</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__row">
+          <div class="footer__copyright">© Алексей Линкер | Создано с любовью в LoftSchool | 2017</div>
+        </div>
+      </footer>
     </div>
-    <h2>Меню</h2>
-    <ul class="menu">
-      <li><a href="/index.html">Главная</a></li>
-      <li><a href="/about.html">Обо мне</a></li>
-      <li><a href="/my-works.html">Мои работы</a></li>
-      <li><a href="/blog.html">Блог</a></li>
-    </ul>
   </body>
 </html>

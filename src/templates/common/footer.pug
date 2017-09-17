@@ -1,0 +1,21 @@
+footer.footer
+	.footer__row
+		.footer__col.footer__col-left
+		.footer__col.footer__col-mid
+			.footer__menu
+				nav.menu
+					ul.menu__list
+					each item in ['Мои работы', 'Обо мне', 'Блог', 'Авторизация']
+						li.menu__item
+							a(href="#").menu__link
+			.footer__socials
+				ul.socials.socials_footer
+					each item in ['vk', 'tw', 'in']
+						li.socials__item
+							a(href="" class=`socials__item_${item}`).socials__link
+		.footer__col.footer__col-right
+			.footer__text.text-content
+				p Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете. — Martin Golding
+	.footer__row
+		.footer__copyright
+				| © Алексей Линкер | Создано с любовью в LoftSchool | 2017

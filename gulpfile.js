@@ -36,9 +36,17 @@ const paths = {
 }
 
 // pug
+const fs = require('fs');
+
 function templates() {
     return gulp.src(paths.templates.pages)
-        .pipe(pug({ pretty: true }))
+        .pipe(pug({
+            pretty: true,
+            locals: {
+                one : JSON.parse(fs.readFileSync('./content.json', 'utf8')),
+                two : JSON.parse(fs.readFileSync('./content.json', 'utf8'))
+            } 
+        }))
         .pipe(gulp.dest(paths.root));
 }
 
