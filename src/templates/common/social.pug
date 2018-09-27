@@ -1,4 +1,21 @@
 ul.socials
-	each item in ['vk', 'tw', 'in']
-		li.socials__item
-			a(href="" class=`socials__item_${item}`).socials__link
+	li.socials__item
+		a(href="" class='socials__item_git').socials__link
+			.socials__link-img
+				| <svg width='30' height='22' class='vk'>
+				| <use xlink:href='../assets/images/sprite.svg#vk'></use>
+				| </svg>
+
+	li.socials__item
+		a(href="" class='socials__item_git').socials__link
+			.socials__link-img
+				| <svg width='30' height='22' class='git'>
+				| <use xlink:href='../assets/images/sprite.svg#github'></use>
+				| </svg>
+
+	li.socials__item
+		a(href="" class='socials__item_git').socials__link
+			.socials__link-img
+				| <svg width='30' height='22' class='in'>
+				| <use xlink:href='../assets/images/sprite.svg#in'></use>
+				| </svg>

@@ -3,5 +3,14 @@
     li{
         display: inline-block;
         list-style: none;
+        margin-right: 10px;
     }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.menu__list {
+    padding-left: 29px;
 }

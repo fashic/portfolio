@@ -1,14 +1,4 @@
-
-<div class="header__title">
-  <div class="section-title"><img class="section-title__pic"/></div>
-  <div class="user blog__user">
-    <div class="user__pic"><img class="user__pic-img" src="../../images/content/user.jpg"/></div>
-    <div class="user__description">
-      <div class="user__name">Блог</div>
-      <div class="user__info">Статьи которые я написал</div>
-    </div>
-  </div>
-</div><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -23,111 +13,158 @@
   <body>
     <div class="wrapper">
       <header class="header"> 
-        <div class="container">
-          <div class="hearer__menu">
+        <div class="container header_bg">
+          <div class="header__menu">
             <div class="header__social">
               <ul class="socials">
-                <li class="socials__item"><a class="socials__item_vk socials__link" href=""></a></li>
-                <li class="socials__item"><a class="socials__item_tw socials__link" href=""></a></li>
-                <li class="socials__item"><a class="socials__item_in socials__link" href=""></a></li>
+                <li class="socials__item"><a class="socials__item_git socials__link" href="">
+                    <div class="socials__link-img">
+                      <svg width='30' height='22' class='vk'>
+                      <use xlink:href='../assets/images/sprite.svg#vk'></use>
+                      </svg>
+                    </div></a></li>
+                <li class="socials__item"><a class="socials__item_git socials__link" href="">
+                    <div class="socials__link-img">
+                      <svg width='30' height='22' class='git'>
+                      <use xlink:href='../assets/images/sprite.svg#github'></use>
+                      </svg>
+                    </div></a></li>
+                <li class="socials__item"><a class="socials__item_git socials__link" href="">
+                    <div class="socials__link-img">
+                      <svg width='30' height='22' class='in'>
+                      <use xlink:href='../assets/images/sprite.svg#in'></use>
+                      </svg>
+                    </div></a></li>
               </ul>
             </div>
-            <div class="hamburger"><img class="hamburger__pic" src="../../images/hamburger.png"></div>
+            <div class="hamburger">
+              <svg class="hamburger__pic"><use xlink:href='../assets/images/sprite.svg#hamburger'></svg>
+            </div>
+          </div>
+          <div class="hero__title">
+                  <div class="header__title">
+                    <svg class="header__title-pic">
+                      <use xlink:href="../assets/images/sprite.svg#portfolio_header"></use>
+                    </svg>
+                  </div>
+            <div class="user">
+              <div class="user__pic"><img class="user__pic-img" src="../../assets/images/content/user.jpg"></div>
+              <div class="user__description">
+                <h1 class="block-subtitle blog__title">Блог</h1>
+                <div class="user__info">Личный сайт разработчика</div>
+              </div>
+            </div>
           </div>
         </div>
-      </header><div class="box">
-<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle">
-<polygon class = "left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
-<polygon class = "right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
+      </header>
+      <section class="section blog">
+        <div class="triangle__white"><div class="triangle">
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="triangle__left triangle__svg">
+<polygon points="0,0   0,86   1000,86   1000,75.5"></polygon>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="triangle__right triangle__svg">
+<polygon points="1000,0   1000,86   0,86   0,75.5"></polygon>
 </svg>
 </div>
-      <section class="section blog">
-        <div class="blog__left">
-          <div class="nav-block">
-            <ul class="nav-blog__list">
-              <li class="nav-blog__item"><a class="nav-blog__link" href="">Самое важное в SASS</a></li>
-              <li class="nav-blog__item"><a class="nav-blog__link" href="">Приёмы в вёрстке, без которых не обходится ни один сайт</a></li>
-              <li class="nav-blog__item"><a class="nav-blog__link" href="">Самый необходимый набор Gulp плагинов</a></li>
-              <li class="nav-blog__item"><a class="nav-blog__link" href="">Почему я выбрал Jade</a></li>
-            </ul>
+        </div>
+        <div class="blog__wrap">
+          <div class="blog__left">
+            <div class="nav-block">
+              <ul class="nav-blog__list">
+                <li class="nav-blog__item"><a class="nav-blog__link blog__active" href="#article__item-1">Самое важное в SASS</a></li>
+                <li class="nav-blog__item"><a class="nav-blog__link" href="#article__item-2">Приёмы в вёрстке, без которых не обходится ни один сайт</a></li>
+                <li class="nav-blog__item"><a class="nav-blog__link" href="#article__item-3">Самый необходимый набор Gulp плагинов</a></li>
+                <li class="nav-blog__item"><a class="nav-blog__link" href="#article__item-4">Почему я выбрал Jade</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="blog__right">
+            <arcticle class="article">
+              <ul class="article__list">
+                <li class="article__item" id="article__item-1">
+                  <h2 class="article__title">Самое важное в SASS </h2>
+                  <div class="article__date">22 ноября 2016 </div>
+                  <div class="article__text">
+                    <p>Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.</p>
+                  </div>
+                </li>
+                <li class="article__item" id="article__item-2">
+                  <h2 class="article__title">Самое важное в SASS </h2>
+                  <div class="article__date">22 ноября 2016</div>
+                  <div class="article__text">
+                    <p>Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.</p>
+                  </div>
+                </li>
+                <li class="article__item" id="article__item-3">
+                  <h2 class="article-title">Самое важное в SASS </h2>
+                  <div class="article__date">22 ноября 2016</div>
+                  <div class="article__text">
+                    <p>Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.</p>
+                  </div>
+                </li>
+                <li class="article__item" id="article__item-4">
+                  <h2 class="article__title">Самое важное в SASS </h2>
+                  <div class="article__date">22 ноября 2016</div>
+                  <div class="article__text">
+                    <p>Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.</p>
+                  </div>
+                </li>
+              </ul>
+            </arcticle>
           </div>
         </div>
-        <div class="blog__right">
-          <arcticle class="article">
-            <div class="article-title">
-              <p>Самое важное в SASS</p>
-            </div>
-            <div class="article-date">
-              <p>22 ноября 2016</p>
-            </div>
-            <div class="article-text">
-              <p>Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.</p>
-            </div>
-            <div class="article-title">
-              <p>Самое важное в SASS</p>
-            </div>
-            <div class="article-date">
-              <p>22 ноября 2016</p>
-            </div>
-            <div class="article-text">
-              <p>Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.</p>
-            </div>
-            <div class="article-title">
-              <p>Самое важное в SASS</p>
-            </div>
-            <div class="article-date">
-              <p>22 ноября 2016</p>
-            </div>
-            <div class="article-text">
-              <p>Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.</p>
-            </div>
-            <div class="article-title">
-              <p>Самое важное в SASS</p>
-            </div>
-            <div class="article-date">
-              <p>22 ноября 2016</p>
-            </div>
-            <div class="article-text">
-              <p>Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.			</p>
-            </div>
-          </arcticle>
-        </div>
       </section>
-      <h2>Меню</h2>
-      <ul class="menu">
-        <li><a href="/index.html">Главная</a></li>
-        <li><a href="/about.html">Обо мне</a></li>
-        <li><a href="/my-works.html">Мои работы</a></li>
-        <li><a href="/blog.html">Блог</a></li>
-      </ul>
       <footer class="footer">
-        <div class="footer__row">
-          <div class="footer__col footer__col-left"></div>
+        <div class="footer__up">
+          <div class="footer__col footer__col-left">
+            <div class="info">
+               Этот сайт я сделал в рамках обучения в Школе онлайн образования &nbsp;<a class="info__link" href="https://loftschool.com">LoftSchool</a>&nbsp;.</div>
+          </div>
           <div class="footer__col footer__col-mid">
-            <div class="footer__menu">
-              <nav class="menu">
-                <ul class="menu__list"></ul>
-                <li class="menu__item"><a class="menu__link" href="#"></a></li>
-                <li class="menu__item"><a class="menu__link" href="#"></a></li>
-                <li class="menu__item"><a class="menu__link" href="#"></a></li>
-                <li class="menu__item"><a class="menu__link" href="#"></a></li>
-              </nav>
-            </div>
-            <div class="footer__socials">
-              <ul class="socials socials_footer">
-                <li class="socials__item"><a class="socials__item_vk socials__link" href=""></a></li>
-                <li class="socials__item"><a class="socials__item_tw socials__link" href=""></a></li>
-                <li class="socials__item"><a class="socials__item_in socials__link" href=""></a></li>
-              </ul>
+            <div class="footer__col-wrap">
+              <div class="footer__menu">
+                <nav class="menu">
+                  <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="my-works.html">Мои работы</a></li>
+                    <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
+                    <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
+                    <li class="menu__item"><a class="menu__link" href="index.html">Авторизация</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer__socials">
+                <ul class="socials">
+                  <li class="socials__item"><a class="socials__item_git socials__link" href="">
+                      <div class="socials__link-img">
+                        <svg width='30' height='22' class='vk'>
+                        <use xlink:href='../assets/images/sprite.svg#vk'></use>
+                        </svg>
+                      </div></a></li>
+                  <li class="socials__item"><a class="socials__item_git socials__link" href="">
+                      <div class="socials__link-img">
+                        <svg width='30' height='22' class='git'>
+                        <use xlink:href='../assets/images/sprite.svg#github'></use>
+                        </svg>
+                      </div></a></li>
+                  <li class="socials__item"><a class="socials__item_git socials__link" href="">
+                      <div class="socials__link-img">
+                        <svg width='30' height='22' class='in'>
+                        <use xlink:href='../assets/images/sprite.svg#in'></use>
+                        </svg>
+                      </div></a></li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="footer__col footer__col-right">
-            <div class="footer__text text-content">
-              <p>Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете. — Martin Golding</p>
+            <div class="footer__quote">
+               Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете. 
+              <div class="footer__quote-autor">
+                 — Martin Golding</div>
             </div>
           </div>
         </div>
-        <div class="footer__row">
+        <div class="footer__down">
           <div class="footer__copyright">© Алексей Линкер | Создано с любовью в LoftSchool | 2017</div>
         </div>
       </footer>

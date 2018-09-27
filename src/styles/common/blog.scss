@@ -1,0 +1,50 @@
+.user__blog {
+  padding-top: 70px;
+}
+
+.blog__title {
+  color: #fff;
+  &:after {
+    border-color: #fff;
+  }
+}
+
+.blog__wrap {
+  display: flex;
+}
+
+.blog__left {
+  width: 30%;
+}
+
+.nav-blog__item {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  text-align: right;
+}
+
+.nav-blog__link {
+  padding-right: 10px;
+}
+
+.blog__active {
+  color: $green;
+  display: flex;
+  justify-content: flex-end;
+
+  &:after {
+    content: '';
+    display: block;
+    border-right: 2px solid $green;
+    padding-left: 10px;
+  }
+}
+
+.blog__right {
+  width: 70%;
+}
+
+.article__date {
+  color: $light__green;
+}

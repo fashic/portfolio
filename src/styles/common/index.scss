@@ -29,6 +29,7 @@
 	border-radius: 15px;
 	color: #fff;
 	transition: 1.2s;
+	background-color: rgba(0,0,0, 0.0);
 
 	&:hover {
 		transition: 0.5s;
@@ -38,8 +39,8 @@
 }
 
 .welcome__form-block {
-	width: 380px;
-	height: 395px;
+	width: rem(380px);
+	height: rem(395px);
 	transform-style: preserve-3d;
 	transition: 1s;
 	position: relative;
@@ -63,5 +64,51 @@
 	transition: 1s;
 }
 
+.welcome__user {
+	padding-top: rem(40px);
+}
+
+.welcome__user__description {
+	padding-top: rem(20px);
+}
+
+.welcome__user__info {
+	padding-top: rem(12px);
+}
+
+.welcome__social {
+	padding-top: rem(35px);
+}
+
+.welcome__menu {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.welcome__menu-list {
+	display: flex;
+}
+
+.welcome__menu-item {
+	display: flex;
+	flex: 1;
+	text-align: center;
+}
+
+.welcome__menu-link {
+	width: 100%;
+	color: #fff;
+	padding-top: rem(10px);
+	padding-bottom: rem(10px);
+}
+
+.welcome__footer {
+	color: #fff;
+}
+
+.welcome__footer-text {
+	color: #fff;
+}
 
 

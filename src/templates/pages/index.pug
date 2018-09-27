@@ -26,51 +26,21 @@ html
 									.user.welcome__user
 										.user__pic
 											img.user__pic-img(src="../../assets/images/content/user.jpg")
-										.user__description
+										.user__description.welcome__user__description
 											.user__name Линкер Алексей
-											.user__info Личный сайт разработчика
+											.user__info.welcome__user__info Личный сайт разработчика
 								.welcome__social
 									include ../common/social
 								.welcome__menu
 									ul.welcome__menu-list
-										li.welcome__menu-item
-											a(href="my-works.html") Мои работы
-										li.welcome__menu-item
-											a(href="about.html") Обо мне
-										li.welcome__menu-item
-											a(href="blog.html") Блог
-
-							//- .avt__block
-							//- 	form.form.form-avt
-							//- 	.form__title.form__avt-title Авторизируйтесь
-							//- 	.form__row.form__avt-row
-							//- 		label.form__label-input
-							//- 			.form__icon
-							//- 			input.form__input(type="text" placeholder="Логин")
-							//- 	.form__row.form__avt-row
-							//- 		label.form__label-input
-							//- 			.form__icon
-							//- 			input.form__input(type="text" placeholder="Пароль")
-							//- 	.form__row.form__avt-row
-							//- 		label.form__checkbox
-							//- 			input.form__checkbox-input(type="checkbox")
-							//- 			.form__checkbox-fake
-							//- 			.form__checkbox-text Я Человек
-							//- 	.form__row.radio
-							//- 		.radio__title Вы точно не робот?
-							//- 		.radio__row
-							//- 			input.radio__btn(type="radio" name="robot" value="yes")
-							//- 			.radio__fake
-							//- 			.radio__text Да
-
-							//- 			input.radio__btn(type="radio" name="robot" value="no")
-							//- 			.radio__fake
-							//- 			.radio__text Не уверен
-							//- 	.form__btn
-							//- 		button(type="button").form__btn-left.welcome__btn-left На главную
-							//- 		button(type="submit").form__btn-right.welcome__btn-right Войти
-								
-							footer.welcome__footer
-							p © Алексей Линкер | создано с любовью в LoftSchool | 2016
+										li.welcome__menu-item.button
+											a(href="my-works.html" class='welcome__menu-link') Мои работы
+										li.welcome__menu-item.button
+											a(href="about.html" class='welcome__menu-link') Обо мне
+										li.welcome__menu-item.button
+											a(href="blog.html" class='welcome__menu-link') Блог
+	
+						footer.welcome__footer
+							.welcome__footer-text © Алексей Линкер | создано с любовью в LoftSchool | 2016
 	
 

@@ -1,0 +1,14 @@
+.arrow-down  {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.arrow-down__pic {
+  fill: #c2d3c9;
+  opacity: .7;
+  width: rem(25px);
+  height: rem(25px);
+  position: absolute;
+  top: 450px;
+}

@@ -5,14 +5,35 @@ $light__grey: #566358;
 $grey: #373e42;
 
 
+@function rem($px) {
+    @return $px/16px+0rem;
+}
+
+//resolution
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+
 //setups 
 @import 'setups/fonts';
 @import 'setups/layout';
 @import 'setups/main';
+@import 'setups/media';
 
 
 @import 'common/menu';
+@import 'common/arrow_down';
 @import 'common/header';
 @import 'common/index';
+@import 'common/social';
+@import 'common/footer';
+@import 'common/about';
+@import 'common/triangle';
+@import 'common/blog.scss';
+@import 'common/my-work.scss';
+@import 'common/reviews.scss';
+@import 'common/form.scss';
+
 //@import 'common/technologies';
 //@import 'common/slider';

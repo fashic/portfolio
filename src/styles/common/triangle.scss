@@ -1,0 +1,28 @@
+.triangle__white{
+    .triangle {
+        .triangle__svg {
+            fill: #fff;
+        }
+    }
+
+}
+
+
+.triangle {
+    width: 100%;
+    position: absolute;
+    transform: translateY(-100%);
+    display: flex;
+}
+
+.triangle__svg {
+    width: 50%;
+}
+
+.triangle__left {
+    fill: #ebefe2;
+}
+
+.triangle__right {
+    fill: #f4f5f0;
+}

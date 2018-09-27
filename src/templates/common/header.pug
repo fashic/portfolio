@@ -1,10 +1,24 @@
+include ../mixins/mixins
+
 block header
 
-header.header 
-	.container
-		.hearer__menu
-			.header__social
-				include ./social
+	header.header 
+		.container.header_bg
+			.header__menu
+				.header__social
+					include ./social
 
-			.hamburger
-				img.hamburger__pic(src="../../images/hamburger.png")
+				.hamburger
+					svg.hamburger__pic
+						<use xlink:href='../assets/images/sprite.svg#hamburger'>
+			.hero__title
+				+header('../assets/images/sprite.svg#portfolio_header')
+				.user
+					.user__pic
+						img.user__pic-img(src="../../assets/images/content/user.jpg")
+					.user__description
+						h1(class=userName) #{blogName}
+						.user__info Личный сайт разработчика
+			//- .arrow-down
+			//- 	svg.arrow-down__pic
+			//- 		<use xlink:href='../assets/images/sprite.svg#arrow_down'>

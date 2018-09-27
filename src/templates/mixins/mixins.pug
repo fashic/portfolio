@@ -1,0 +1,36 @@
+mixin header(header__svg)
+	.header__title
+		svg.header__title-pic
+			use(xlink:href=header__svg)
+
+mixin skills-list(skill, text, count)
+		li.skills-list__item
+			.skill-row
+				.skills-row__title= skill
+				ul.skills-row__list
+					- for (var i = 0; i < count; i++) {
+						li.skills-row__item
+							svg.skills-row__circle(viewBox='0 0 110 110')
+								circle(cx='50%' cy='50%' r='45' fill='none' class='skill-row__circle-first')
+								circle(cx='50%' cy='50%' r='45' fill='none' class='skill-row__circle-second' transform='rotate(-90 55 55)')
+							.skills-row__text= text[i]	
+					- }
+
+mixin contact(path, link, text)
+	li.contacts__item
+		a.contacts__link(href=link)
+			svg.contacts__icon
+				use(xlink:href=path)
+			.contact__text=text
+
+mixin social(path, link)
+	li.socials__item
+		a.socials__link(href="link")
+			svg.socials__link-svg
+				use(xlink:href=path)
+
+mixin footer-social(path, link)
+	li.socials__item
+		a.socials__link(href="link")
+			svg.socials__link-svg
+				use(xlink:href=path)

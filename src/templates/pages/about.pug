@@ -1,72 +1,59 @@
 extends ../template
+include ../mixins/mixins
 
 block variables
 	- var title = 'Обо мне'
+	- var userName = 'user__name'
+	- var blogName = 'Линкер Алексей'
+
+block header
+	include ../common/arrow_down
+	include ../common/header
 
 block content 
-	section.section.hero
 
-		.hero__title
-			.section-title
-				img.section-title__pic
-			.user.hero__user
-				.user__pic
-					img.user__pic-img(src="../../images/content/user.jpg")
-				.user__description
-					.user__name Линкер Алексей
-					.user__info Личный сайт разработчика
-		.hero__scroll-btn
-			button(type="button").arrow-down
-	section.section.about
+
+	main.section.about
+		include ../common/triangle
 		.about__left
-			.about__triangle.about__triangle-left
-				svg.triangle.triangel_fill_white
 			.about__left-title
-				.block-title Обо мне
+				h1.block-title Обо мне
+				.about__left-pic.block-title__pic
+					svg.about__left-svg.block-title__svg
+						use(xlink:href='../assets/images/sprite.svg#about_header')
 			.about__left-content
 				.user-description
 					.user-description__image
-						img.user-description__avatar
+						img.user-description__avatar(src="../assets/images/content/user1.jpg", alt="")
 					.user-description_title
-						.block-subtitle Кто я
+						h2.block-subtitle Кто я
 					.user-description__text.text-content
-						p Я веб разработчик из Новосибирска. Мне 27 лет. 
-						p Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-						p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+						.text__content-block
+							p Я веб разработчик из Новосибирска. Мне 27 лет. 
+							p Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+						.text__content-block
+							p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
 		.about__right
-			.about__triangle.about__triangle-right
-				svg.triangle.triangel_fill_beige
-			.about__right-title
-				.block-subtitle Чем я могу быть полезен
-			.about__right-description.text-content
-				p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
+			.about__right-text
+				.about__right-title
+					.block-subtitle Чем я могу быть вам полезен
+				.about__right-description.text-content
+					.text__content-block
+						p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
 			.about__right-content
-				each skill in ['frontend', 'backend', 'workflow']
-					ul.skills-list
-						li.skills-list__item
-							.skills-row
-								.skills-row__title= skill
-								ul.skills-row__list
-									li.skills-row__item
-										.skill
-											svg.skill_circle
-											.skill__title
+				ul.skills-list
+					+skills-list('Frontend', ['HTML5', 'CSS3', 'JavaScript & jQuery'], '3')
+					+skills-list('Backend', ['PHP', 'mySQL', 'Node.js & npm', 'MongoDb'], '4')
+					+skills-list('WorlFlow', ['Git', 'Gulp', 'WebPack'], '3')
 	section.section.map
-		.google-map
+		.g-map
 		.map__data
 			.contacts
-				.contacts__title
-					.block-subtitle Контакты
+				.block-subtitle.contacts-block Контакты
 				ul.contacts__list
-					-
-						var contacts = [
-							['skype', 'fashic'],
-							['mail', 'fahic@bk.ru'],
-							['phone', '+7938 426 72 34'],
-							['mark', 'Краснодар, улю 40 лет победы 33/10'] 
-						]
-					each contact in contacts	
-						li.contacts__item
-							.contacts-row
-								.contacts-row__icon #{contact[0]} 
-								.contacts-row__content #{contact[1]}
+					+contact('../assets/images/sprite.svg#skype', 'skype:fashic', 'fashic')
+					+contact('../assets/images/sprite.svg#envelope2', 'mailto:fashic@bk.ru', 'fashic@bk.ru')
+					+contact('../assets/images/sprite.svg#phone2', 'tel:+79384267234', '+79384267234')
+					+contact('../assets/images/sprite.svg#map_marker', 'https://www.google.ru/maps/@45.0583177,39.007864,15z', 'Краснодар ул. 40 лет Победы 33/10')
+
+	include ../common/footer
