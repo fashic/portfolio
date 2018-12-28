@@ -1,8 +1,12 @@
-.container
-    ul#slides
-        li.slide.showing
-        li.slide
-        li.slide
-    .buttons
-        button.controls#previous &lt;
-        button.controls#next &gt;    
+.slider__wpar
+		.slader__choise
+			ul.choise__list
+		ul#slides
+				+slider-block('showing', 1, 'веб сайт 1', 'блок с текстом 1')
+				+slider-block('', 2, 'веб сайт 2', 'блок с текстом 2')
+				+slider-block('', 3, 'веб сайт 3', 'блок с текстом 3')
+		.buttons
+			button.controls#previous
+				+arrow("slider__previous", 30, 22)
+			button.controls#next
+				+arrow("slider__next", 30, 22)

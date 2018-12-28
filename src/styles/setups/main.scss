@@ -1,3 +1,7 @@
+.wrapper {
+    position: relative;
+}
+
 .section {
     position: relative;
 }
@@ -161,3 +165,8 @@
 		transition: 0.6s;
 	}
 }
+
+.container{
+    position: relative;
+    width: 100%;
+  }

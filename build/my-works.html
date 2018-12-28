@@ -12,6 +12,14 @@
   </head>
   <body>
     <div class="wrapper">
+      <nav class="hamburger">
+        <ul class="hamburger__list">
+          <li class="hamburger__item"><a class="hamburger__link block-subtitle" href="my-works.html">Мои работы</a></li>
+          <li class="hamburger__item"><a class="hamburger__link block-subtitle" href="about.html">Обо мне</a></li>
+          <li class="hamburger__item"><a class="hamburger__link block-subtitle" href="blog.html">Блог</a></li>
+          <li class="hamburger__item"><a class="hamburger__link block-subtitle" href="index.html">Авторизация</a></li>
+        </ul>
+      </nav>
       <header class="header"> 
         <div class="container header_bg">
           <div class="header__menu">
@@ -37,7 +45,7 @@
                                   </div></a></li>
               </ul>
             </div>
-            <div class="hamburger">
+            <div class="hamburger__wrap">
               <svg class="hamburger__pic"><use xlink:href='../assets/images/sprite.svg#hamburger'></svg>
             </div>
           </div>
@@ -57,7 +65,7 @@
           </div>
         </div>
         <div class="arrow__down">
-          <svg class="arrow__down-pic"><use xlink:href='../assets/images/sprite.svg#arrow_down'></svg>
+                        <svg class="arrow__header arrow" width="30" height="22"><use xlink:href='../assets/images/sprite.svg#arrow_down'></svg>
         </div>
       </header>
       <section class="section my-work">
@@ -78,36 +86,58 @@
         </div>
       </section>
       <section class="section my-job">
-        <div class="school">
-          <h2 class="block-subtitle">Сайт школы онлайн образования</h2>
-          <div class="school__text">HTML, CSS, JavaScript</div>
-          <div class="school__block">
-            <div class="school__pic">
-              <svg class="shool__svg">
-                <use xlink:href="../assets/images/sprite.svg#link"></use>
-              </svg>
-            </div><a class="school__link button" href="loftschool.ru">Посмотреть сайт</a>
-          </div>
-        </div>
-        <div class="slider__wrap">
+        <div class="container">
           <ul id="slides">
-            <li class="slide showing"></li>
-            <li class="slide"></li>
-            <li class="slide"></li>
+                          <li class="slide showing">
+                            <div class="slider__bg slider__bg-1"></div>
+                            <div class="slider__block showing">
+                              <h2 class="block-subtitle">веб сайт 1</h2>
+                              <div class="slider__block-text">блок с текстом 1</div>
+                              <div class="slider__block-img">
+                                <div class="slider__block-pic">
+                                  <svg class="slider__block-svg" width="30" height="22">
+                                    <use xlink:href="../assets/images/sprite.svg#link"></use>
+                                  </svg>
+                                </div><a class="slider__block-link button" href="link">Посмотреть сайт</a>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="slide">
+                            <div class="slider__bg slider__bg-2"></div>
+                            <div class="slider__block showing">
+                              <h2 class="block-subtitle">веб сайт 2</h2>
+                              <div class="slider__block-text">блок с текстом 2</div>
+                              <div class="slider__block-img">
+                                <div class="slider__block-pic">
+                                  <svg class="slider__block-svg" width="30" height="22">
+                                    <use xlink:href="../assets/images/sprite.svg#link"></use>
+                                  </svg>
+                                </div><a class="slider__block-link button" href="link">Посмотреть сайт</a>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="slide">
+                            <div class="slider__bg slider__bg-3"></div>
+                            <div class="slider__block showing">
+                              <h2 class="block-subtitle">веб сайт 3</h2>
+                              <div class="slider__block-text">блок с текстом 3</div>
+                              <div class="slider__block-img">
+                                <div class="slider__block-pic">
+                                  <svg class="slider__block-svg" width="30" height="22">
+                                    <use xlink:href="../assets/images/sprite.svg#link"></use>
+                                  </svg>
+                                </div><a class="slider__block-link button" href="link">Посмотреть сайт</a>
+                              </div>
+                            </div>
+                          </li>
           </ul>
           <div class="buttons">
-                          <button class="slider__button" id="previous">
-                            <div class="slider__button-bg"></div>
-                            <div class="slider__button-svg button__pos">
-                              <svg class="arrow__down-pic"><use xlink:href='../assets/images/sprite.svg#arrow_down'></svg>
-                            </div>
-                          </button>
-                          <button class="slider__button" id="next">
-                            <div class="slider__button-bg"></div>
-                            <div class="slider__button-svg button__pos">
-                              <svg class="arrow__down-pic"><use xlink:href='../assets/images/sprite.svg#arrow_down'></svg>
-                            </div>
-                          </button>
+            <button class="controls" id="previous">
+                            <svg class="slider__previous arrow" width="30" height="22"><use xlink:href='../assets/images/sprite.svg#arrow_down'></svg>
+            </button>
+            <button class="controls" id="next">
+                            <svg class="slider__next arrow" width="30" height="22"><use xlink:href='../assets/images/sprite.svg#arrow_down'></svg>
+            </button>
           </div>
         </div>
       </section>
@@ -175,16 +205,15 @@
             </div>
             <div class="footer__col footer__col-mid">
               <div class="footer__col-wrap">
-                <div class="footer__menu">
-                  <nav class="menu">
-                    <ul class="menu__list">
-                      <li class="menu__item"><a class="menu__link" href="my-works.html">Мои работы</a></li>
-                      <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
-                      <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
-                      <li class="menu__item"><a class="menu__link" href="index.html">Авторизация</a></li>
-                    </ul>
-                  </nav>
-                </div>
+                <div class="footer__menu"></div>
+                              <nav class="menu">
+                                <ul class="menu__list">
+                                  <li class="menu__item"><a class="menu__link" href="my-works.html">Мои работы</a></li>
+                                  <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
+                                  <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
+                                  <li class="menu__item"><a class="menu__link" href="index.html">Авторизация</a></li>
+                                </ul>
+                              </nav>
                 <div class="footer__socials">
                   <ul class="socials">
                                       <li class="socials__item"><a class="socials__link" href="link">

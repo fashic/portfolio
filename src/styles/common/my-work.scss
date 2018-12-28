@@ -18,37 +18,6 @@
   width: 50%;
 }
 
-
-
-.school__text {
-  color: $green;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-.school__block {
-  position: relative;
-  display: flex;
-}
-
-.school__pic {
-  position: absolute;
-  width: 12%;
-  left: 15px;
-  top: -53px;
-}
-
-.shool__svg {
-  width: 100%;
-  fill: #fff;
-}
-
-.school__link {
-  color: #fff;
-  padding: 10px 30px 10px 50px;
-  border-radius: 30px;
-}
-
 .my-work__bg {
   background-image: url('../images/bg/bg_my-work.jpg');
     background-position: no-repeat;

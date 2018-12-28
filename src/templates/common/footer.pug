@@ -8,20 +8,7 @@ footer.footer
 		.footer__col.footer__col-mid
 			.footer__col-wrap
 				.footer__menu
-					nav.menu
-						ul.menu__list
-							li.menu__item
-								a.menu__link(href='my-works.html')
-									| Мои работы
-							li.menu__item
-								a.menu__link(href='about.html')
-									| Обо мне
-							li.menu__item
-								a.menu__link(href='blog.html')
-									| Блог
-							li.menu__item
-								a.menu__link(href='index.html')
-									| Авторизация
+				+menu('menu')
 
 				.footer__socials
 					include ./social

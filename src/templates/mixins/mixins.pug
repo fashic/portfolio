@@ -36,3 +36,39 @@ mixin slider-button(id, bg, path)
 		.slider__button-svg.button__pos
 			include ../common/arrow
 
+mixin slider-block(name, number, title, text, link)
+	li.slide(class= name)
+		div.slider__bg(class='slider__bg-'+ number)
+		.slider__block.showing
+			h2.block-subtitle=title
+			.slider__block-text=text
+			.slider__block-img
+				.slider__block-pic
+					svg.slider__block-svg(width='30' height='22')
+						use(xlink:href='../assets/images/sprite.svg#link')
+				a(href="link" class='slider__block-link button') Посмотреть сайт
+
+mixin arrow(name, width, height)
+	svg(class= name, class="arrow" width= width height= height)
+		<use xlink:href='../assets/images/sprite.svg#arrow_down'>
+
+mixin menu(name, secondclass)
+	nav(class= name)
+		ul(class= name +'__list')
+			li(class= name +'__item')
+				a(class= name +'__link' class= secondclass  href='my-works.html')
+					| Мои работы
+			li(class= name +'__item')
+				a(class= name +'__link' class= secondclass href='about.html')
+					| Обо мне
+			li(class= name +'__item')
+				a(class= name +'__link' class= secondclass href='blog.html')
+					| Блог
+			li(class= name +'__item')
+				a(class= name +'__link' class= secondclass href='index.html')
+					| Авторизация
+
+mixin select__menu()
+	ul.select__list
+		li.select__item
+			a.select__link

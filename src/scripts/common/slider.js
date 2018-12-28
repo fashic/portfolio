@@ -17,7 +17,7 @@ function setupListners(){
     next.onclick = function(){
         goToSlide(currentSlide+1);
     }
-    pervious.onclick = function(){
+    previous.onclick = function(){
         goToSlide(currentSlide-1);
     }
 }
