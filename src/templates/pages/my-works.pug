@@ -1,15 +1,15 @@
 extends ../template
+include ../mixins/mixins
 
 block variables
 	- var title = 'Мои работы'
 	- var userName = 'user__name'
 	- var blogName = 'Линкер Алексей'
+	- var userInfo = 'Личный сайт разработчика'
+
 
 block header
-	include ../common/arrow_down
 	include ../common/header	
-
-
 
 block content 
 	section.section.my-work
@@ -29,7 +29,7 @@ block content
 					svg.shool__svg
 						use(xlink:href='../assets/images/sprite.svg#link')
 				a(href="loftschool.ru" class='school__link button') Посмотреть сайт
-		.slider
+		include ../common/slider
 
 
 	.my-work__bg

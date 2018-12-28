@@ -12,32 +12,29 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="arrow-down">
-        <svg class="arrow-down__pic"><use xlink:href='../assets/images/sprite.svg#arrow_down'></svg>
-      </div>
       <header class="header"> 
         <div class="container header_bg">
           <div class="header__menu">
             <div class="header__social">
               <ul class="socials">
-                <li class="socials__item"><a class="socials__item_git socials__link" href="">
-                    <div class="socials__link-img">
-                      <svg width='30' height='22' class='vk'>
-                      <use xlink:href='../assets/images/sprite.svg#vk'></use>
-                      </svg>
-                    </div></a></li>
-                <li class="socials__item"><a class="socials__item_git socials__link" href="">
-                    <div class="socials__link-img">
-                      <svg width='30' height='22' class='git'>
-                      <use xlink:href='../assets/images/sprite.svg#github'></use>
-                      </svg>
-                    </div></a></li>
-                <li class="socials__item"><a class="socials__item_git socials__link" href="">
-                    <div class="socials__link-img">
-                      <svg width='30' height='22' class='in'>
-                      <use xlink:href='../assets/images/sprite.svg#in'></use>
-                      </svg>
-                    </div></a></li>
+                              <li class="socials__item"><a class="socials__link" href="link">
+                                  <div class="socials__link-img">
+                                    <svg class="in" width="30" height="22">
+                                      <use xlink:href="../assets/images/sprite.svg#vk"></use>
+                                    </svg>
+                                  </div></a></li>
+                              <li class="socials__item"><a class="socials__link" href="link">
+                                  <div class="socials__link-img">
+                                    <svg class="in" width="30" height="22">
+                                      <use xlink:href="../assets/images/sprite.svg#github"></use>
+                                    </svg>
+                                  </div></a></li>
+                              <li class="socials__item"><a class="socials__link" href="link">
+                                  <div class="socials__link-img">
+                                    <svg class="in" width="30" height="22">
+                                      <use xlink:href="../assets/images/sprite.svg#in"></use>
+                                    </svg>
+                                  </div></a></li>
               </ul>
             </div>
             <div class="hamburger">
@@ -45,11 +42,11 @@
             </div>
           </div>
           <div class="hero__title">
-                  <div class="header__title">
-                    <svg class="header__title-pic">
-                      <use xlink:href="../assets/images/sprite.svg#portfolio_header"></use>
-                    </svg>
-                  </div>
+                          <div class="header__title">
+                            <svg class="header__title-pic">
+                              <use xlink:href="../assets/images/sprite.svg#portfolio_header"></use>
+                            </svg>
+                          </div>
             <div class="user">
               <div class="user__pic"><img class="user__pic-img" src="../../assets/images/content/user.jpg"></div>
               <div class="user__description">
@@ -58,6 +55,9 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="arrow__down">
+          <svg class="arrow__down-pic"><use xlink:href='../assets/images/sprite.svg#arrow_down'></svg>
         </div>
       </header>
       <section class="section my-work">
@@ -89,7 +89,27 @@
             </div><a class="school__link button" href="loftschool.ru">Посмотреть сайт</a>
           </div>
         </div>
-        <div class="slider"></div>
+        <div class="slider__wrap">
+          <ul id="slides">
+            <li class="slide showing"></li>
+            <li class="slide"></li>
+            <li class="slide"></li>
+          </ul>
+          <div class="buttons">
+                          <button class="slider__button" id="previous">
+                            <div class="slider__button-bg"></div>
+                            <div class="slider__button-svg button__pos">
+                              <svg class="arrow__down-pic"><use xlink:href='../assets/images/sprite.svg#arrow_down'></svg>
+                            </div>
+                          </button>
+                          <button class="slider__button" id="next">
+                            <div class="slider__button-bg"></div>
+                            <div class="slider__button-svg button__pos">
+                              <svg class="arrow__down-pic"><use xlink:href='../assets/images/sprite.svg#arrow_down'></svg>
+                            </div>
+                          </button>
+          </div>
+        </div>
       </section>
       <div class="my-work__bg">
         <section class="section reviews">
@@ -167,24 +187,24 @@
                 </div>
                 <div class="footer__socials">
                   <ul class="socials">
-                    <li class="socials__item"><a class="socials__item_git socials__link" href="">
-                        <div class="socials__link-img">
-                          <svg width='30' height='22' class='vk'>
-                          <use xlink:href='../assets/images/sprite.svg#vk'></use>
-                          </svg>
-                        </div></a></li>
-                    <li class="socials__item"><a class="socials__item_git socials__link" href="">
-                        <div class="socials__link-img">
-                          <svg width='30' height='22' class='git'>
-                          <use xlink:href='../assets/images/sprite.svg#github'></use>
-                          </svg>
-                        </div></a></li>
-                    <li class="socials__item"><a class="socials__item_git socials__link" href="">
-                        <div class="socials__link-img">
-                          <svg width='30' height='22' class='in'>
-                          <use xlink:href='../assets/images/sprite.svg#in'></use>
-                          </svg>
-                        </div></a></li>
+                                      <li class="socials__item"><a class="socials__link" href="link">
+                                          <div class="socials__link-img">
+                                            <svg class="in" width="30" height="22">
+                                              <use xlink:href="../assets/images/sprite.svg#vk"></use>
+                                            </svg>
+                                          </div></a></li>
+                                      <li class="socials__item"><a class="socials__link" href="link">
+                                          <div class="socials__link-img">
+                                            <svg class="in" width="30" height="22">
+                                              <use xlink:href="../assets/images/sprite.svg#github"></use>
+                                            </svg>
+                                          </div></a></li>
+                                      <li class="socials__item"><a class="socials__link" href="link">
+                                          <div class="socials__link-img">
+                                            <svg class="in" width="30" height="22">
+                                              <use xlink:href="../assets/images/sprite.svg#in"></use>
+                                            </svg>
+                                          </div></a></li>
                   </ul>
                 </div>
               </div>

@@ -1,9 +1,11 @@
 extends ../template
+include ../mixins/mixins
 
 block variables
 	- var title = 'Блог'
 	- var userName = ['block-subtitle', 'blog__title']
 	- var blogName = 'Блог'
+	- var userInfo = 'Статьи, которые я написал'
 
 block header
 	include ../common/header

@@ -25,12 +25,14 @@ mixin contact(path, link, text)
 
 mixin social(path, link)
 	li.socials__item
-		a.socials__link(href="link")
-			svg.socials__link-svg
-				use(xlink:href=path)
+		a.socials__link(href='link')
+			.socials__link-img
+				svg(width='30' height='22' class='in')
+					use(xlink:href=path)
 
-mixin footer-social(path, link)
-	li.socials__item
-		a.socials__link(href="link")
-			svg.socials__link-svg
-				use(xlink:href=path)
+mixin slider-button(id, bg, path)
+	button(id=id).slider__button
+		.slider__button-bg
+		.slider__button-svg.button__pos
+			include ../common/arrow
+
